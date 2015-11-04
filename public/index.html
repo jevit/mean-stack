@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html ng-app="appPOI">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GESTION DE POI</title>
+	
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+        #poi-list               { margin-bottom:30px; }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script><!-- load angular 1.2.4 -->
+    <script src="js/controller/main.js"></script> <!-- load up our controller -->
+    <script src="js/service/poi.js"></script> <!-- load our poi service -->
+    <script src="js/core.js"></script> <!-- load our main application -->
+</head>
+
+<body ng-controller="mainController">
+    <div class="container">
+
+        <!-- TOTAL -->
+        <div class="jumbotron text-center">
+            <h1>Gestion de POI <span class="label label-info">{{ pois.length }}</span></h1>
+        </div>
+
+        <!--  LISTE -->
+        <div id="poi-list" class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="checkbox" ng-repeat="poi in pois">
+                    <label>
+                        <input type="checkbox" ng-click="deletePOI(poi._id)"> {{ poi.nom }} ({{ poi.lat }}, {{ poi.lon }})
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- CREATION  -->
+        <div id="poi-form" class="row">
+            <div class="text-center">
+                <form>
+                    <div class="form-inline">
+						<div class="form-group">
+							<input type="text" class="form-control input-lg text-center" placeholder="Nom du poi" ng-model="formData.nom">
+						</div>	
+						<div class="form-group">
+							<input type="text" class="form-control input-lg text-center"  size="2" placeholder="lat" ng-model="formData.lat">
+						</div>	
+						<div class="form-group">
+							<input type="text" class="form-control input-lg text-center"  size="2" placeholder="lon" ng-model="formData.lon">
+						</div>	
+						<button type="submit" class="btn btn-primary btn-lg" ng-click="createPOI()">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+		
+    </div>
+
+</body>
+</html>
