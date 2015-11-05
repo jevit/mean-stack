@@ -2,7 +2,7 @@
     
 angular.module('poiController', [])
     .controller('mainController', function($scope, $http) {
-        $scope.formData = {};
+        $scope.formDataPOI = {};
 
          /* Liste des pois */
         $http.get('/api/pois')
@@ -15,9 +15,10 @@ angular.module('poiController', [])
 
         /* Creation d'un poi */
         $scope.createPOI = function() {
-                $http.post('/api/pois', $scope.poi)
+                $http.post('/api/pois', $scope.formDataPOI)
                         .success(function(data) {
-                                $scope.formData = {}; // clear the form so our user is ready to enter another
+				console.log( $scope.formDataPOI)
+                                $scope.formDataPOI = {}; // clean le formulaire
                                 $scope.pois = data;
                         })
                         .error(function(data) {

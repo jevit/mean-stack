@@ -11,7 +11,6 @@ module.exports = function(app) {
 	
 	// Création d'un POI
 	app.post('/api/pois', function(req, res) {
-	console.log(req)
         POI.create({
             nom : req.body.nom,
 			lat: req.body.lat,
