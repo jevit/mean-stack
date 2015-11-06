@@ -14,7 +14,7 @@ module.exports = function(app) {
         POI.create({
             nom : req.body.nom,
 			lat: req.body.lat,
-			lon: req.body.lon,
+			lng: req.body.lng,
             done : false
         }, function(err, poi) {
             if (err){ res.send(err); }
