@@ -1,0 +1,2 @@
+angular-leaflet:
+hauteur à 100%: mettre le html, body et eventuellement toute l'arborescence avec la height à 100% dans le style

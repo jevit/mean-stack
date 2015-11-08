@@ -1,0 +1,46 @@
+
+        <!-- TOTAL -->
+        <div class="jumbotron text-center">
+            <h1>Gestion de POI <span class="label label-info">{{ pois.length }}</span></h1>
+        </div>
+
+		<div>
+			<div id="poi-list" class="row">
+				<!--  LISTE -->
+				<div class="col-md-4 col-md-offset-4">
+					<div class="checkbox" ng-repeat="poi in pois">
+						<label>
+							<input type="checkbox" ng-click="deletePOI(poi._id)"> {{ poi.nom }} ({{ poi.lat }}, {{ poi.lng }})
+						</label>
+					</div>
+				</div>
+				<!-- CARTE -->
+				<div class="col-md-4">
+				<div >
+					<leaflet width="400px" height="200px" center="center"  markers="markers" ></leaflet>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+
+        <!-- CREATION  -->
+        <div id="poi-form" class="row">
+            <div class="text-center">
+                <form>
+                    <div class="form-inline">
+						<div class="form-group">
+							<input type="text" class="form-control input-lg text-center" placeholder="Nom du poi" ng-model="formDataPOI.nom">
+						</div>	
+						<div class="form-group">
+							<input type="text" class="form-control input-lg text-center"  size="2" placeholder="lat" ng-model="formDataPOI.lat">
+						</div>	
+						<div class="form-group">
+							<input type="text" class="form-control input-lg text-center"  size="2" placeholder="lng" ng-model="formDataPOI.lng">
+						</div>	
+						<button type="submit" class="btn btn-primary btn-lg" ng-click="createPOI()">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+		
