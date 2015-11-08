@@ -19,9 +19,12 @@ public : fichiers transferé au client
 0.1: Squelette à partir de l'article scotch.io
 0.2: Modification du squelette avec des points d'interets
 0.3: Ajout de fonctionnalités
+0.4: Intégration de leaflet
+0.5: Grid bootstrap
 
 Reference : 
 https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular
 http://getbootstrap.com/
 http://mongoosejs.com/docs/models.html
 https://docs.angularjs.org/api
+http://tombatossals.github.io/angular-leaflet-directive/

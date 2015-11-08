@@ -1,0 +1,16 @@
+jumbotron: /
+navbar : 
+- surcharger les coleurs
+		/* navbar */
+		.navbar-default {
+			background-color: #44ad68;
+			border-color: #030033;
+		}
+		/* title */
+		.navbar-default .navbar-brand {
+			color: #000;
+		}
+- supprimer margin bottom : .navbar{ margin-bottom:0px;	}
+
+grid:
+- enlever le padding : sur les grid avec les class col-x-y :.navbar{margin-bottom:0px;}
