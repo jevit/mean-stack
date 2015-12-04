@@ -1,2 +1,12 @@
 angular-leaflet:
 hauteur à 100%: mettre le html, body et eventuellement toute l'arborescence avec la height à 100% dans le style
+
+route et ngview
+boucle s'il ne trouve pas des fichiers dans la route, ou si le controller est renseigné dans le html
+
+jquery dropdown
+il ne marche pas s'il les dépendances ne sont pas mises ds le bon ordre
+	<link type="text/css"  href="./lib/jquery.dropdown.min.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+

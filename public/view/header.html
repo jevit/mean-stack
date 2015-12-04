@@ -1,0 +1,63 @@
+<!-- NAVBAR -->
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<!-- ACCUEIL -->
+			<div class="navbar-header ">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand " href="#">Geo Data</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<!-- MENU -->
+				<ul class="nav navbar-nav">
+					<li><a href="#">Statistique</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-jq-dropdown="dropdown" data-toggle="dropdown">Paramètre <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+						  <li><a href="#">Importer des données GPS</a></li>
+						  <li><a href="#">Créer un parcours</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">A propos</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- LOGIN -->
+				<ul class="nav navbar-nav navbar-right ">
+					<li class="dropdown " id="menu1">
+						<a class="dropdown-toggle " data-toggle="dropdown" href="#">Se connecter <b class="caret"></b> </a>
+						<div class="dropdown-menu  ">
+							<form method="post"  accept-charset="UTF-8">
+								<div class="form-inline login-menu">
+									<div class="form-group">
+										<input type="text" placeholder="Email" class="form-control ">
+									</div>
+									<div class="form-group">
+										<input type="password" placeholder="Password" class="form-control">
+									</div>
+									<div class="form-group">
+										<input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
+										<label class="string optional" for="user_remember_me">Se souvenir de moi</label>
+									</div>
+									<div class="form-group" style="clear: left; width: 100%;">
+										<button type="submit" style="clear: left; width: 100%; height: 32px; font-size: 13px;" class="btn btn-sm btn-success">Valider</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</li>
+					<li><a href="#">S'inscrire</a></li>
+				</ul>
+				<!-- SEARCH -->
+				<form class="navbar-form navbar-right" role="search">
+				  <div class="form-group">
+					<input type="text" class="form-control" placeholder="Rechercher...">
+				  </div>
+				  <button type="submit" class="btn btn-default">OK</button>
+				</form>
+			</div>
+        </div>
+    </nav>
