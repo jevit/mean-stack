@@ -5,14 +5,25 @@ body                    { 	height: 100%;}
 /* navbar */
 .navbar-default 		{	background-color: #fff;	border-color: #030033;	}
 .navbar					{ 	margin-bottom:0px;	}
-.navbar > .container	{ 	margin-left:5px;	margin-right:5px;padding:0px;}
+.navbar > .container	{ 	padding:0px;}
 .navbar-default .navbar-brand {	color: #778;	}
+.hoverAllDiv{
+   /* position: relative; /* <-- Added */
+    z-index: 2000; /* <-- Added */
+	}
 /* leaflet */
-.height100moinsNAV		{	height: calc(100% - 52px);	}
+.borderright			{
+		border-right:1px black solid ;
+		border-left:1px black solid ;
+		border-bottom:1px black solid ;
+}
+.height100moinsNAV		{	height: calc(100% - 51px);	}
 .height100				{	height: 100%;		}
 .margin5				{	margin:5px ;		}
 .angular-leaflet-map 	{ 	height: 100%;		}
 .padding0				{	padding: 0px; 		}
+.paddingSide5				{	padding-top: 5px; padding-bottom: 5px; 		}
+.padding5				{	padding: 5px; 		}
 .float-right			{   position: relative;    right: 0px;	float:right;}
 .glyphicon				{ 	margin-left:2px; margin-right:2px;	}
 .checkbox				{	padding-left:5px;	}
@@ -30,5 +41,14 @@ body                    { 	height: 100%;}
 .checkbox label, .radio label{padding-left:5px;}
 .container-fluid		{	background-color:#FFF;	}
 .panel					{  background-color: rgba(255, 255, 255, 0.10); padding:3px; border:1px solid; }
-.panel-item				{  background-color: rgba(255, 255, 255, 0.10); padding:0px;     border-radius: 0px;border-bottom:1px solid; }
-.panel-title			{   background-color: rgba(7, 59, 195, 0.10) !important;  padding:1px;border:0px solid; border-radius: 4px;font:bold 14px "Helvetica Neue",Helvetica,Arial,sans-serif; }
+.panel-item				{  
+background-color: rgba(255, 255, 255, 0.10); 
+padding:0px;     
+border-radius: 0px;
+border-bottom:1px dotted; }
+.panel-title			{   
+background-color: rgba(7, 59, 195, 0.10) !important;  
+padding:1px;border:0px solid; 
+border-radius: 4px;
+font:bold 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+ }

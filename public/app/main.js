@@ -1,3 +1,3 @@
 'use strict'
 
-var appPOI = angular.module('appPOI', [ 'leaflet-directive','ngRoute']);
+var appPOI = angular.module('appPOI', [ 'leaflet-directive','ngRoute','highcharts-ng']);

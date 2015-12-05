@@ -1,6 +1,7 @@
 appPOI.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-    when('/map', {controller:'MapController', templateUrl:'view/poi.html'});
+    when('/map', {controller:'MapController', templateUrl:'view/poi.html'}).
+    when('/highchart', {controller:'HighChartController', templateUrl:'view/highchart.html'});
     /* when('/edit/:projectId', {controller:'EditCtrl', templateUrl:'detail.html'}).
     when('/new', {controller:'CreateCtrl', templateUrl:'detail.html'}). */
    
