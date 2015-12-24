@@ -16,13 +16,36 @@ ARCHITECTURE
 node_module : module du serveur
 public : fichiers transferé au client
 
-0.1: Squelette à partir de l'article scotch.io
-0.2: Modification du squelette avec des points d'interets
-0.3: Ajout de fonctionnalités
-0.4: Intégration de leaflet
-0.5: Grid bootstrap
+VERSION
+0.10: 
+ Squelette
+ Modification du squelette et intégration de leaflet
+ Affiche, ajoute, et supprime un points d'interets, afficher via leaftlet
+ bootstrap pour le style
+0.11: 
+ ETL: projet parallele prototype pour importer des données ( gpx, web sémantique) via rest
+ Decoupage des controllers, views, routes et ng-view
+ intégration highchart <-
+ découpage des services, ajout directives, filters.
+ modifier des pois,liés les stats au pois, créer des parcours
+0.12: 
+ Gestion des sessions utilisateurs 
+ Modifier les documents pour prendre en compte des parcours
+--
+0.130: guidestyle angular
+--
+0.170: Tests angular
+--
+0.190: Intégration continue 
+--
+0.200: Nouvelles fonctionnalité : import données, création parcours
+--
+0.300: Algorithme ( pathfinding,..)
+--
+...
 
-Reference : 
+
+REFERENCE: 
 https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular
 http://getbootstrap.com/
 http://mongoosejs.com/docs/models.html
